@@ -1,0 +1,15 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+remappings = [
+    '@openzeppelin/=lib/openzeppelin-contracts/'
+]
+
+[rpc_endpoints]
+local = "${LOCAL_RPC_URL}"
+
+[etherscan]
+goerli = { key = "${ETHERSCAN_KEY}" }
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
